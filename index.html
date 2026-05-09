@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Hub DnD</title>
 <style>
-    /* Полная мобильная адаптация */
     * {
         box-sizing: border-box;
         -webkit-tap-highlight-color: transparent;
@@ -19,31 +18,33 @@
         padding: 0;
         display: flex; 
         justify-content: center; 
-        align-items: center; 
+        /* ИЗМЕНЕНО: убрали align-items: center, чтобы контент не висел посередине */
+        align-items: flex-start; 
         min-height: 100vh;
         width: 100%;
     }
 
     .hub-container {
-        width: 90%;
+        width: 95%;
         max-width: 400px;
         display: flex;
         flex-direction: column;
-        gap: 16px;
-        padding: 20px 0;
+        gap: 12px;
+        /* ИЗМЕНЕНО: минимальный отступ сверху */
+        padding: 10px 0 40px 0; 
     }
 
     h1 {
-        font-size: 28px;
-        letter-spacing: 4px;
+        font-size: 26px;
+        letter-spacing: 3px;
         text-transform: uppercase;
         color: #e8eaed;
-        margin: 0 0 30px 0;
+        /* ИЗМЕНЕНО: уменьшили отступы вокруг заголовка */
+        margin: 10px 0 15px 0;
         text-align: center;
         font-weight: bold;
     }
 
-    /* Кнопки-ссылки */
     .nav-btn {
         display: flex;
         align-items: center;
@@ -51,8 +52,8 @@
         text-decoration: none;
         background: #2d2f33;
         color: #ffffff;
-        min-height: 75px; 
-        padding: 15px;
+        min-height: 70px; 
+        padding: 12px;
         border-radius: 16px;
         border: 1px solid #3c4043;
         font-size: 18px;
@@ -63,23 +64,23 @@
         box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
-    /* Эффект при нажатии на телефоне */
     .nav-btn:active {
         transform: scale(0.95);
         background: #3a3d42;
         border-color: #5f6368;
     }
 
-    /* Логическое цветовое кодирование */
-    .btn-char { border-left: 6px solid #e74c3c; }   /* Красный - Персонаж (HP/Сила) */
-    .btn-inv { border-left: 6px solid #f1c40f; }    /* Золотой - Инвентарь (Вещи) */
-    .btn-alch { border-left: 6px solid #9b59b6; }   /* Фиолетовый - Алхимия (Зелья) */
-    .btn-magic { border-left: 6px solid #3498db; }  /* Синий - Магия (Мана) */
-    .btn-best { border-left: 6px solid #2ecc71; }   /* Зеленый - Бестиарий (Монстры/Природа) */
+    /* Цветовая логика */
+    .btn-char { border-left: 6px solid #e74c3c; }   
+    .btn-inv { border-left: 6px solid #f1c40f; }    
+    .btn-alch { border-left: 6px solid #9b59b6; }   
+    .btn-magic { border-left: 6px solid #3498db; }  
+    .btn-best { border-left: 6px solid #2ecc71; }   
 
     @media (max-height: 600px) {
-        .hub-container { gap: 10px; }
-        .nav-btn { min-height: 65px; font-size: 16px; }
+        .hub-container { gap: 8px; }
+        .nav-btn { min-height: 60px; font-size: 16px; }
+        h1 { margin: 5px 0 10px 0; font-size: 22px; }
     }
 </style>
 </head>
