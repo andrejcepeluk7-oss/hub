@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Hub DnD</title>
+<style>
+    /* Полная мобильная адаптация */
+    * {
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body { 
+        font-family: "Comic Sans MS", "Comic Sans", cursive; 
+        background: #1a1b1e; 
+        color: #e8eaed; 
+        margin: 0; 
+        padding: 0;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .hub-container {
+        width: 90%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #e8eaed;
+        margin: 0 0 30px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* Кнопки-ссылки */
+    .nav-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background: #2d2f33;
+        color: #ffffff;
+        min-height: 75px; 
+        padding: 15px;
+        border-radius: 16px;
+        border: 1px solid #3c4043;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: transform 0.1s, background 0.2s;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Эффект при нажатии на телефоне */
+    .nav-btn:active {
+        transform: scale(0.95);
+        background: #3a3d42;
+        border-color: #5f6368;
+    }
+
+    /* Декоративная полоса сбоку */
+    .btn-char { border-left: 6px solid #e8eaed; }
+    .btn-inv { border-left: 6px solid #9aa0a6; }
+    .btn-alch { border-left: 6px solid #5f6368; }
+    .btn-magic { border-left: 6px solid #ffffff; }
+
+    @media (max-height: 600px) {
+        .hub-container { gap: 10px; }
+        .nav-btn { min-height: 65px; font-size: 16px; }
+    }
+</style>
+</head>
+<body>
+
+<div class="hub-container">
+    <h1>Hub DnD</h1>
+
+    <a href="https://andrejcepeluk7-oss.github.io/xyeta/" class="nav-btn btn-char">
+        Персонаж
+    </a>
+
+    <a href="https://andrejcepeluk7-oss.github.io/inventar/" class="nav-btn btn-inv">
+        Инвентарь
+    </a>
+
+    <a href="https://andrejcepeluk7-oss.github.io/alhimia/" class="nav-btn btn-alch">
+        Алхимия
+    </a>
+
+    <a href="https://andrejcepeluk7-oss.github.io/magic/" class="nav-btn btn-magic">
+        Магия
+    </a>
+</div>
+
+</body>
+</html>
