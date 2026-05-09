@@ -70,11 +70,12 @@
         border-color: #5f6368;
     }
 
-    /* Декоративная полоса сбоку */
-    .btn-char { border-left: 6px solid #e8eaed; }
-    .btn-inv { border-left: 6px solid #9aa0a6; }
-    .btn-alch { border-left: 6px solid #5f6368; }
-    .btn-magic { border-left: 6px solid #ffffff; }
+    /* Логическое цветовое кодирование */
+    .btn-char { border-left: 6px solid #e74c3c; }   /* Красный - Персонаж (HP/Сила) */
+    .btn-inv { border-left: 6px solid #f1c40f; }    /* Золотой - Инвентарь (Вещи) */
+    .btn-alch { border-left: 6px solid #9b59b6; }   /* Фиолетовый - Алхимия (Зелья) */
+    .btn-magic { border-left: 6px solid #3498db; }  /* Синий - Магия (Мана) */
+    .btn-best { border-left: 6px solid #2ecc71; }   /* Зеленый - Бестиарий (Монстры/Природа) */
 
     @media (max-height: 600px) {
         .hub-container { gap: 10px; }
@@ -101,6 +102,10 @@
 
     <a href="https://andrejcepeluk7-oss.github.io/magic/" class="nav-btn btn-magic">
         Магия
+    </a>
+
+    <a href="https://andrejcepeluk7-oss.github.io/bestiari/" class="nav-btn btn-best">
+        Бестиарий
     </a>
 </div>
 
