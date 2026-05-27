@@ -18,7 +18,6 @@
         padding: 0;
         display: flex; 
         justify-content: center; 
-        /* ИЗМЕНЕНО: убрали align-items: center, чтобы контент не висел посередине */
         align-items: flex-start; 
         min-height: 100vh;
         width: 100%;
@@ -30,7 +29,6 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
-        /* ИЗМЕНЕНО: минимальный отступ сверху */
         padding: 10px 0 40px 0; 
     }
 
@@ -39,7 +37,6 @@
         letter-spacing: 3px;
         text-transform: uppercase;
         color: #e8eaed;
-        /* ИЗМЕНЕНО: уменьшили отступы вокруг заголовка */
         margin: 10px 0 15px 0;
         text-align: center;
         font-weight: bold;
@@ -70,12 +67,12 @@
         border-color: #5f6368;
     }
 
-    /* Цветовая логика */
     .btn-char { border-left: 6px solid #e74c3c; }   
     .btn-inv { border-left: 6px solid #f1c40f; }    
     .btn-alch { border-left: 6px solid #9b59b6; }   
     .btn-magic { border-left: 6px solid #3498db; }  
-    .btn-best { border-left: 6px solid #2ecc71; }   
+    .btn-best { border-left: 6px solid #2ecc71; }
+    .btn-dmg { border-left: 6px solid #ff6b6b; }
 
     @media (max-height: 600px) {
         .hub-container { gap: 8px; }
@@ -108,6 +105,11 @@
     <a href="https://andrejcepeluk7-oss.github.io/bestiari/" class="nav-btn btn-best">
         Бестиарий
     </a>
+
+    <a href="https://andrejcepeluk7-oss.github.io/yron/" class="nav-btn btn-dmg">
+        Урон
+    </a>
+
 </div>
 
 </body>
